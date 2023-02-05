@@ -9,14 +9,14 @@ public class MultiThread {
   private static BlockingQueue<SwipeEvent> queue;
   private static AtomicInteger winCount;
   private static AtomicInteger loseCount;
-  private static Integer numThreads = 100;
-  private static final Integer totalCount = 500_000;
+  private static Integer numThreads = 16;
+  private static final Integer totalCount = 8000;
 
   public static void main(String[] args) throws InterruptedException {
     System.out.println("Start from here");
 
-//    IP = "http://localhost:8080/assignment1_war_exploded/skiers/";
-    IP = "http://34.219.176.28:8080/assignment1_war/skiers/";
+    IP = "http://localhost:8080/assignment1_war_exploded/skiers/";
+//    IP = "http://34.219.176.28:8080/assignment1_war/skiers/";
     queue = new LinkedBlockingQueue<>();
     winCount = new AtomicInteger(0);
     loseCount = new AtomicInteger(0);
