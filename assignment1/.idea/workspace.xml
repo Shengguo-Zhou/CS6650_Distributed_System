@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="assignment1:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="00228fc0-9298-4156-8fd2-ff90d1f47493" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab2_new/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5700/01-Introduction.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5700/02-SocketProgramming.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5700/03-Application.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5700/Programming Assignment 1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/assignment1_war_exploded/WEB-INF/classes/SkierServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/assignment1_war_exploded/WEB-INF/classes/SkierServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SkierServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SkierServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/MusicEd.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/MusicEd/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/MusicEd/graphicsLib/G.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/MusicEd/graphicsLib/Window.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/MusicEd/sandbox/Paint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/MusicEd/sandbox/Squares.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/MusicEd1009/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/MusicEd1009/graphicsLib/G.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/MusicEd1009/graphicsLib/Window.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/MusicEd1009/sandbox/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/MusicEd1009/sandbox/Paint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/MusicEd1009/sandbox/Squares.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/MusicEd副本.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/musicEd2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/musicEd2/graphicsLib/G.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/musicEd2/graphicsLib/Window.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JAVA/musicEd2/sandbox/Paint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001" beforeDir="false" afterPath="$PROJECT_DIR$/../../cs5001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001-lecture-code/lecture-code" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/0921.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/0921test/lecture-code" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/2019_final.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/2019_final_solutions.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/2019_midterm.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/2019_midterm_solutions.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/HW1-1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/HW2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/HW3-1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/HW4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/HW5-1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/Lab 2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/Lab 3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/Lab4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/Lab5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/Lab6.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/Lab7.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/Lecture1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/Lecture2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/Lecture3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/Lecture4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5001doc/Lecture5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5002/Additional Notes on Counting_Questions_uploaded.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5002/CS5002 Quiz 9_30paper.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5002/CS5002_Fall2020_HW4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5002/CS5002_Fall2020_HW5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5002/CS5002_Fall2020_HW6.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5002/CS5002_Quiz_9:30:2021.pages" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5002/CS5002_Shengguo_Zhou_HW2_test.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5002/CS5002_Shengguo_Zhou_HW4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5002/Lecture3_Sets.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5002/Lecture4_functions.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5002/Quiz_9:30:2021_new.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5002/hw04 2021-10-10 16.02.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5002/白纸.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/CS5004_Spring2022_Lab1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.2/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.3/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.3/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.3/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.3/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.3/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.3/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.3/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.3/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.3/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.3/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/7.3/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/Author.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/Author.uml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/jquery-ui.overrides.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/legal/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/legal/ASSEMBLY_EXCEPTION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/legal/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/legal/jquery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/legal/jqueryUI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/module-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/sandbox" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/images/ui-bg_glass_65_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/jquery-3.5.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script-dir/jquery-ui.structure.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/src/main/java/Author.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/src/test/java/AuthorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/tag-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/code/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.2/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.2/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.3/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.3/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.3/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.3/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.3/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.3/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.3/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.3/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.3/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.3/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/7.3/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/Author.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/Author.uml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/allclasses-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/allpackages-index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/element-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/jquery-ui.overrides.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/legal/ADDITIONAL_LICENSE_INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/legal/ASSEMBLY_EXCEPTION" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/legal/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/legal/jquery.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/legal/jqueryUI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/member-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/module-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/package-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/resources/glass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/resources/x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/sandbox" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/images/ui-bg_glass_65_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/jquery-3.5.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/jquery-ui.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script-dir/jquery-ui.structure.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/src/main/java/Author.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/src/test/java/AuthorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/tag-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/lab01/type-search-index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/ppt/CS5004_Assignment_1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/ppt/CS5004_Lecture2.1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/ppt/CS5004_Spring2022_Lab2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cs5004/ppt/GITrefresher.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../leetcode/CS5800 Notes.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../leetcode/CS5800-Algorithm-Notes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../leetcode/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../leetcode/labuladong的算法小抄2020.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../leetcode/labuladong的算法小抄2021.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../leetcode/roychen-cs5001/Game-Othello" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../teeth/CONTRACT PROPOSAL.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../teeth/RIOLO-S.Zhou 6679-Initial-Composite + close ups.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../teeth/cigna-dental-1500-common.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../租房/4153-41.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../租房/4153-FP-00380174-2-2-1005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../租房/Online Return Center.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../租房/Online Return Center1024.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../租房/alcyone-apartments-exterior.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../租房/公寓转租.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../租房/租房.webp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LD771TUolgOyrodlL4bkUuOlgH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.71" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.71" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="assignment1:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/assignment1_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="587eea57-0bec-46d8-87fa-cf667c3d3565" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53817" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="assignment1:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00228fc0-9298-4156-8fd2-ff90d1f47493" name="Changes" comment="" />
+      <created>1675393634089</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675393634089</updated>
+      <workItem from="1675393639420" duration="13900000" />
+      <workItem from="1675446131722" duration="10165000" />
+      <workItem from="1675464772610" duration="154000" />
+      <workItem from="1675465745615" duration="834000" />
+      <workItem from="1675488345303" duration="1498000" />
+      <workItem from="1675539404782" duration="813000" />
+      <workItem from="1675559196096" duration="4645000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
