@@ -1,8 +1,11 @@
+import event.GraphPlot;
 import event.OutputCSV;
 import event.ResultList;
 import event.ResultProcess;
 import event.SwipeEvent;
 import java.io.IOException;
+import java.util.Collections;
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -13,14 +16,14 @@ public class MultiThread {
   private static BlockingQueue<SwipeEvent> queue;
   private static AtomicInteger winCount;
   private static AtomicInteger loseCount;
-  private static Integer numThreads = 200;
+  private static Integer numThreads = 100;
   private static Integer totalCount = 500_000;
 
   public static void main(String[] args) throws InterruptedException {
     System.out.println("Start from here");
 
-//    IP = "http://localhost:8080/assignment1_war_exploded/skiers/";
-    IP = "http://54.149.232.249:8080/assignment1_war/skiers/";
+    IP = "http://localhost:8080/assignment1_war_exploded/skiers/";
+//    IP = "http://52.25.155.80:8080/assignment1_war/skiers/";
     queue = new LinkedBlockingQueue<>();
     winCount = new AtomicInteger(0);
     loseCount = new AtomicInteger(0);
@@ -40,10 +43,18 @@ public class MultiThread {
     latch1.await();
     long end = System.currentTimeMillis();
     long lastTime = end - start;
-
+    OutputCSV outputCSV = new OutputCSV();
     try {
-      OutputCSV outputCSV = new OutputCSV();
       outputCSV.outPutCSVToPath(resultList.getResultList(),
+          "/Users/shengguozhou/Desktop/6650distributed_system/");
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+
+    GraphPlot graphPlot = new GraphPlot(resultList);
+    List<Integer> timeCount = graphPlot.getList();
+    try {
+      outputCSV.outPutCSVToPath2(timeCount,
           "/Users/shengguozhou/Desktop/6650distributed_system/");
     } catch (IOException e) {
       e.printStackTrace();
