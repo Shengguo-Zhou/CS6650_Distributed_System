@@ -3,6 +3,7 @@ import Entites.SwiperDetails;
 import Entites.GetChannel;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
+import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
@@ -20,6 +21,7 @@ public class SkierServlet extends HttpServlet {
   private Gson gson = new Gson();
   private ObjectPool<Channel> pool;
   private String QUEUE = "ResultMQ";
+  private String EXCHANGE = "SwipeExchange";
 
   @Override
   public void init() {
@@ -27,6 +29,10 @@ public class SkierServlet extends HttpServlet {
     connectionFactory.setHost("localhost");
     connectionFactory.setUsername("guest");
     connectionFactory.setPassword("guest");
+//    connectionFactory.setHost("54.245.192.226");
+//    connectionFactory.setVirtualHost("cherry_broker");
+//    connectionFactory.setUsername("user");
+//    connectionFactory.setPassword("user");
     Connection connection;
     try {
       connection = connectionFactory.newConnection();
@@ -100,7 +106,7 @@ public class SkierServlet extends HttpServlet {
     ObjectMapper objectMapper = new ObjectMapper();
     StringBuilder sb = new StringBuilder();
     BufferedReader bufferedReader = request.getReader();
-    while (bufferedReader.ready()){
+    while (bufferedReader.ready()) {
       sb.append(bufferedReader.readLine());
     }
 
@@ -113,9 +119,11 @@ public class SkierServlet extends HttpServlet {
       Channel cur;
       try {
         cur = pool.borrowObject();
-        cur.queueDeclare(QUEUE, false, false, false, null);
+        cur.exchangeDeclare(EXCHANGE, BuiltinExchangeType.FANOUT);
+//        cur.queueDeclare(QUEUE, false, false, false, null);
         String send = gson.toJson(swiperBody);
-        cur.basicPublish("", QUEUE, null, send.getBytes());
+        cur.basicPublish(EXCHANGE, "", null, send.getBytes());
+//        cur.basicPublish("", QUEUE, null, send.getBytes());
         pool.returnObject(cur);
       } catch (Exception e) {
         e.printStackTrace();

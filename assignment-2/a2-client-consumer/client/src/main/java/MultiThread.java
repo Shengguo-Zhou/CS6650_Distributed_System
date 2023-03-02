@@ -17,13 +17,13 @@ public class MultiThread {
   private static AtomicInteger winCount;
   private static AtomicInteger loseCount;
   private static Integer numThreads = 10;
-  private static Integer totalCount = 50;
+  private static Integer totalCount = 500;
 
   public static void main(String[] args) throws InterruptedException {
     System.out.println("Start from here");
 
-    IP = "http://localhost:8080/server/skiers/";
-//    IP = "http://52.25.155.80:8080/assignment1_war/skiers/";
+    IP = "http://localhost:8080/server_a2_war/skiers/";
+//    IP = "http://ec2-54-244-204-254.us-west-2.compute.amazonaws.com:8080/server-a2_war/skiers/";
     queue = new LinkedBlockingQueue<>();
     winCount = new AtomicInteger(0);
     loseCount = new AtomicInteger(0);
