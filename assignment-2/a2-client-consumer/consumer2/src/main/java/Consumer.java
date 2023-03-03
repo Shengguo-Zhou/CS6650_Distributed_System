@@ -9,21 +9,21 @@ import com.rabbitmq.client.ConnectionFactory;
 
 public class Consumer {
 
-  private static final int NUM_THREADS = 10;
+  private static final int NUM_THREADS = 100;
   private static final ConcurrentHashMap<String, List<String>> HASH_MAP2 = new ConcurrentHashMap<>();
   private static final String QUEUE = "ResultMQ2";
   private static final String EXCHANGE = "SwipeExchange";
 
   public static void main(String[] args) {
     ConnectionFactory connectionFactory = new ConnectionFactory();
-    connectionFactory.setHost("localhost");
-    connectionFactory.setUsername("guest");
-    connectionFactory.setPassword("guest");
+//    connectionFactory.setHost("localhost");
+//    connectionFactory.setUsername("guest");
+//    connectionFactory.setPassword("guest");
 
-//    connectionFactory.setHost("ec2-52-27-183-254.us-west-2.compute.amazonaws.com");
-//    connectionFactory.setVirtualHost("cherry_broker");
-//    connectionFactory.setUsername("user");
-//    connectionFactory.setPassword("user");
+    connectionFactory.setHost("54.202.0.80");
+    connectionFactory.setVirtualHost("cherry_broker");
+    connectionFactory.setUsername("user");
+    connectionFactory.setPassword("user");
     try {
       Connection connection = connectionFactory.newConnection();
       ExecutorService threadPool = Executors.newFixedThreadPool(NUM_THREADS);

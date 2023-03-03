@@ -16,14 +16,15 @@ public class MultiThread {
   private static BlockingQueue<SwipeEvent> queue;
   private static AtomicInteger winCount;
   private static AtomicInteger loseCount;
-  private static Integer numThreads = 10;
-  private static Integer totalCount = 500;
+  private static Integer numThreads = 100;
+  private static Integer totalCount = 500_000;
 
   public static void main(String[] args) throws InterruptedException {
     System.out.println("Start from here");
 
-    IP = "http://localhost:8080/server_a2_war/skiers/";
-//    IP = "http://ec2-54-244-204-254.us-west-2.compute.amazonaws.com:8080/server-a2_war/skiers/";
+//    IP = "http://localhost:8080/server_a2_war/skiers/";
+//    IP = "http://34.222.146.112:8080/server-a2_war/skiers/";
+    IP = "http://a2-load-balancer-1376870592.us-west-2.elb.amazonaws.com:8080/server-a2_war/skiers/";
     queue = new LinkedBlockingQueue<>();
     winCount = new AtomicInteger(0);
     loseCount = new AtomicInteger(0);

@@ -26,13 +26,13 @@ public class SkierServlet extends HttpServlet {
   @Override
   public void init() {
     ConnectionFactory connectionFactory = new ConnectionFactory();
-    connectionFactory.setHost("localhost");
-    connectionFactory.setUsername("guest");
-    connectionFactory.setPassword("guest");
-//    connectionFactory.setHost("54.245.192.226");
-//    connectionFactory.setVirtualHost("cherry_broker");
-//    connectionFactory.setUsername("user");
-//    connectionFactory.setPassword("user");
+//    connectionFactory.setHost("localhost");
+//    connectionFactory.setUsername("guest");
+//    connectionFactory.setPassword("guest");
+    connectionFactory.setHost("54.202.0.80");
+    connectionFactory.setVirtualHost("cherry_broker");
+    connectionFactory.setUsername("user");
+    connectionFactory.setPassword("user");
     Connection connection;
     try {
       connection = connectionFactory.newConnection();
