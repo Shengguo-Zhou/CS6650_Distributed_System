@@ -1,17 +1,22 @@
 import Entites.SwiperBody;
 import Entites.SwiperDetails;
 import Entites.GetChannel;
-import Entites.Matches;
-import Entites.MatchStats;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
+import Entites.MatchStats;
+import Entites.Matches;
 import java.io.BufferedReader;
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeoutException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -34,13 +39,13 @@ public class SkierServlet extends HttpServlet {
   @Override
   public void init() {
     ConnectionFactory connectionFactory = new ConnectionFactory();
-    connectionFactory.setHost("localhost");
-    connectionFactory.setUsername("guest");
-    connectionFactory.setPassword("guest");
-//    connectionFactory.setHost("54.202.0.80");
-//    connectionFactory.setVirtualHost("cherry_broker");
-//    connectionFactory.setUsername("user");
-//    connectionFactory.setPassword("user");
+//    connectionFactory.setHost("localhost");
+//    connectionFactory.setUsername("guest");
+//    connectionFactory.setPassword("guest");
+    connectionFactory.setHost("54.201.155.64");
+    connectionFactory.setVirtualHost("cherry_broker");
+    connectionFactory.setUsername("user");
+    connectionFactory.setPassword("user");
     Connection connection;
     try {
       connection = connectionFactory.newConnection();
@@ -51,7 +56,8 @@ public class SkierServlet extends HttpServlet {
     JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
     jedisPoolConfig.setMaxTotal(200);
     jedisPoolConfig.setMaxIdle(150);
-    this.jedisPool = new JedisPool(new JedisPoolConfig(), "localhost", 6379);
+    this.jedisPool = new JedisPool(new JedisPoolConfig(), "34.219.132.175", 6379);
+//    this.jedisPool = new JedisPool(new JedisPoolConfig(), "localhost", 6379);
   }
 
   @Override
@@ -65,8 +71,6 @@ public class SkierServlet extends HttpServlet {
     if (!doGetCheck(urls, response)) {
       response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
     } else  {
-
-      Gson gson = new Gson();
       ObjectMapper objectMapper = new ObjectMapper();
       StringBuilder sb = new StringBuilder();
       BufferedReader bufferedReader = request.getReader();
@@ -75,25 +79,36 @@ public class SkierServlet extends HttpServlet {
       }
       if(urls[1].equalsIgnoreCase("matches")){
         try (Jedis jedis = jedisPool.getResource()) {
-          Set<String> members = jedis.smembers(urls[2]);
-          System.out.println(members.toString());
-          JsonNode node = objectMapper.readTree(members.iterator().next());
-          JsonNode matchList = node.get("matchList");
-          Matches matches = objectMapper.readValue(matchList.toString(), Matches.class);
-          response.getWriter().write(matches.toString());
-          System.out.println(matches.toString());
+          jedis.select(1);
+          String members = jedis.get(urls[2]);
+          if(members == null || members.length() == 0) members = "[]";
+//          System.out.println("matches list: " + members);
+          Matches matches = new Matches();
+          String[] elements = members.substring(1, members.length() - 1).split(",");
+          List<String> list = new ArrayList<>();
+          for (String element : elements) {
+            list.add(element.trim());
+          }
+          matches.setMatchList(list);
+          response.getWriter().write(gson.toJson(matches));
         } catch (Exception e) {
           e.printStackTrace();
         }
       } else {
         try (Jedis jedis = jedisPool.getResource()) {
-          Set<String> members = jedis.smembers(urls[2]);
-          JsonNode node = objectMapper.readTree(members.iterator().next());
-          Integer numLikes = node.get("numLlikes").asInt();
-          Integer numDislikes = node.get("numDislikes").asInt();
-          MatchStats matchStats = new MatchStats(numLikes, numDislikes);
-          response.getWriter().write(matchStats.toString());
-          System.out.println(matchStats.toString());
+          jedis.select(0);
+          String members = jedis.get(urls[2]);
+          MatchStats matchStats = new MatchStats();
+          if(members == null || members.length() == 0) members = "[0, 0]";
+//          System.out.println("like & dislike number: " + members);
+          String[] substrings = members.substring(1, members.length() - 1).split(", ");
+          Integer likeNumber = Integer.valueOf(substrings[0]);
+          Integer dislikeNumber = Integer.valueOf(substrings[1]);
+//          System.out.println("likeNumber = " + likeNumber);
+//          System.out.println("dislikeNumber = " + dislikeNumber);
+          matchStats.setNumDislikes(likeNumber);
+          matchStats.setNumLlikes(dislikeNumber);
+          response.getWriter().write(gson.toJson(matchStats));
         } catch (Exception e) {
           e.printStackTrace();
         }

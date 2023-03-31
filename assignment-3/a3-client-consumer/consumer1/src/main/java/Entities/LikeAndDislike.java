@@ -1,19 +1,15 @@
 package Entities;
-
 import java.util.concurrent.atomic.AtomicInteger;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
 public class LikeAndDislike {
-  private AtomicInteger likeNumber;
-  private AtomicInteger dislikeNumber;
-
-  public LikeAndDislike() {
-    this.likeNumber = new AtomicInteger(0);
-    this.dislikeNumber = new AtomicInteger(0);
-  }
+  private AtomicInteger likeNumber = new AtomicInteger(0);
+  private AtomicInteger dislikeNumber = new AtomicInteger(0);
 
   public LikeAndDislike(AtomicInteger likeNumber, AtomicInteger dislikeNumber) {
     this.likeNumber = likeNumber;

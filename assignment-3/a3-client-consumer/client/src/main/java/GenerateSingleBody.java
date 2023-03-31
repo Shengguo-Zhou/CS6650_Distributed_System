@@ -3,8 +3,8 @@ import java.util.Random;
 import org.apache.commons.lang3.RandomStringUtils;
 
 public class GenerateSingleBody {
-  private static int SWIPER_NUMBER = 10;
-  private static int SWIPEE_NUMBER = 10;
+  private static int SWIPER_NUMBER = 50000;
+  private static int SWIPEE_NUMBER = 50000;
 
   public GenerateSingleBody() {}
 

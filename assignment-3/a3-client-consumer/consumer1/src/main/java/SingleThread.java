@@ -11,6 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
+import redis.clients.jedis.exceptions.JedisException;
 
 public class SingleThread implements Runnable{
   Gson gson = new Gson();
@@ -45,7 +46,7 @@ public class SingleThread implements Runnable{
         SwiperDetails swiperDetails = gson.fromJson(message, SwiperDetails.class);
         System.out.println("Received: " + message);
         try {
-          GetData(swiperDetails);
+           GetData(swiperDetails);
         } finally {
           System.out.println("Finished");
           channel.basicAck(delivery.getEnvelope().getDeliveryTag(), false);
@@ -62,25 +63,32 @@ public class SingleThread implements Runnable{
   private void GetData(SwiperDetails swiperDetails) {
     String userId = swiperDetails.getSwiper();
     String leftOrRight = swiperDetails.getLeftOrRight();
-
+    boolean contain = false;
     if (!hashmap1.containsKey(userId)) {
       hashmap1.put(userId, new LikeAndDislike());
-      if (leftOrRight.equalsIgnoreCase("left")) {
-        AtomicInteger ret = new AtomicInteger(hashmap1.get(userId).getDislikeNumber().incrementAndGet());
-        hashmap1.get(userId).setDislikeNumber(ret);
-      } else {
-        AtomicInteger ret = new AtomicInteger(hashmap1.get(userId).getLikeNumber().incrementAndGet());
-        hashmap1.get(userId).setLikeNumber(ret);
-      }
+      contain = true;
     }
 
-    JsonObject jsonObject = new JsonObject();
-    jsonObject.add("numLlikes", JsonParser.parseString(hashmap1.get(userId).getLikeNumber().toString()));
-    jsonObject.add("numDislikes", JsonParser.parseString(hashmap1.get(userId).getDislikeNumber().toString()));
+    if (leftOrRight.equalsIgnoreCase("left")) {
+      AtomicInteger ret = new AtomicInteger(hashmap1.get(userId).getDislikeNumber().incrementAndGet());
+      hashmap1.get(userId).setDislikeNumber(ret);
+    } else {
+      AtomicInteger ret = new AtomicInteger(hashmap1.get(userId).getLikeNumber().incrementAndGet());
+      hashmap1.get(userId).setLikeNumber(ret);
+    }
 
+
+    int[] likeDislike = new int[] {hashmap1.get(userId).getLikeNumber().get(), hashmap1.get(userId).getDislikeNumber().get()};
     try (Jedis jedis = jedisPool.getResource()) {
-      jedis.sadd(userId, new GsonBuilder().setPrettyPrinting().create().toJson(jsonObject));
-//      jedis.sadd(userId, "consumer1");
+      jedis.select(0);
+      String s = new String("[" + likeDislike[0] + ", " + likeDislike[1] + "]");
+      if(contain){
+        jedis.sadd(userId, s);
+      } else {
+        jedis.set(userId, s);
+      }
+    } catch (JedisException e) {
+      // Handle the exception
     }
 
   }

@@ -16,8 +16,8 @@ public class MultiThread {
   private static BlockingQueue<SwipeEvent> queue;
   private static AtomicInteger winCount;
   private static AtomicInteger loseCount;
-  private static Integer numThreads = 5;
-  private static Integer totalCount = 50;
+  private static Integer numThreads = 200;
+  private static Integer totalCount = 500_000;
 
   private static AtomicInteger numberOfSuccessGetCount;
   private static AtomicInteger numberOfLostCount;
@@ -25,9 +25,9 @@ public class MultiThread {
   public static void main(String[] args) throws InterruptedException {
     System.out.println("Start from here");
 
-    IP = "http://localhost:8080/server_a2_war_exploded/skiers/";
-//    IP = "http://34.222.146.112:8080/server-a2_war/skiers/";
-//    IP = "http://a2-load-balancer-1376870592.us-west-2.elb.amazonaws.com:8080/server-a2_war/skiers/";
+//    IP = "http://localhost:8080/server_a2_war_exploded/skiers/";
+    IP = "http://52.10.99.67:8080/server-a2_war/skiers/";
+//    IP = "http://a3-lb-709645041.us-west-2.elb.amazonaws.com:8080/server-a2_war/skiers/";
     queue = new LinkedBlockingQueue<>();
     winCount = new AtomicInteger(0);
     loseCount = new AtomicInteger(0);
@@ -59,10 +59,12 @@ public class MultiThread {
       Thread threadGet = new Thread(receiveThread);
       threadGet.start();
       System.out.println("Get Thread is started");
+
     }
 
     latch1.await();
     latchGet.await();
+//    threadGet.interrupt();
 
     long end = System.currentTimeMillis();
     long endGet = System.currentTimeMillis();
@@ -106,7 +108,6 @@ public class MultiThread {
     System.out.println("Max response time: " + max);
     System.out.println("Min response time: " + min);
 
-
     ResultProcess resultProcessGet = new ResultProcess(resultListGet.getResultList());
     double meanGet = resultProcessGet.mean();
     double medianGet = resultProcessGet.median();
@@ -126,6 +127,7 @@ public class MultiThread {
     System.out.println("99th percentile response time in receiving data: " + p99Get);
     System.out.println("Max response time in receiving data: " + maxGet);
     System.out.println("Min response time in receiving data: " + minGet);
+    System.exit(0);
   }
 
 }

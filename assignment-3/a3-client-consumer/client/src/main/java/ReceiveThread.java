@@ -64,6 +64,7 @@ public class ReceiveThread implements Runnable{
     List<Result> curResultList = new ArrayList<>();
     int winCount = 0;
     int loseCount = 0;
+    int count = 92;
 //
 //    while (true) {
 //      if (queue.isEmpty()) break;
@@ -76,28 +77,37 @@ public class ReceiveThread implements Runnable{
 //    }
     while(running){
       try{
-        for(int i = 0; i < 1; i++){
+        for(int i = 0; i < 5; i++){
           long startTime = System.currentTimeMillis();
-          String randomUser = String.valueOf(ThreadLocalRandom.current().nextInt(1, 10));
+          String randomUser = String.valueOf(ThreadLocalRandom.current().nextInt(1, 50000));
           System.out.println("Number: " + i);
+          System.out.println("RandomNumber: " + randomUser);
+
           ApiResponse<Matches> matchesApiResponse = matchesApi.matchesWithHttpInfo(randomUser);
+          System.out.println("MatchesApiResponse is: ");
+          System.out.println(matchesApiResponse.getData().toString());
+
           ApiResponse<MatchStats> statsApiResponse = statsApi.matchStatsWithHttpInfo(randomUser);
+          System.out.println("StatsApiResponse is ");
+          System.out.println(statsApiResponse.getData().toString());
+
           winCount++;
           long endTime = System.currentTimeMillis();
           curResultList.add(new Result(startTime, endTime - startTime, 200));
-          System.out.println("MatchesApiResponse is: ");
-          System.out.println(matchesApiResponse.toString());
-          System.out.println("StatsApiResponse is ");
-          System.out.println(statsApiResponse.toString());
           System.out.println("Last time is:" + (endTime - startTime));
         }
         Thread.sleep(1000);
-      } catch (ApiException | InterruptedException e){
+//        if(postingThreadsStarted.getCount() == 0) running = false;
+        if(count <= 0) running = false;
+        count--;
+      } catch (ApiException | InterruptedException e ){
         e.getCause().printStackTrace();
         e.printStackTrace();
         loseCount++;
+      } catch (NullPointerException e){
+        // do nothing
       }
-      running = false;
+//      running = false;
     }
 
     this.successCallCount.getAndAdd(winCount);

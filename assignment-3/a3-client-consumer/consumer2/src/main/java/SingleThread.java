@@ -10,8 +10,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.TimeoutException;
+import java.util.concurrent.atomic.AtomicBoolean;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
+import redis.clients.jedis.exceptions.JedisException;
 
 public class SingleThread implements Runnable{
   Gson gson = new Gson();
@@ -64,9 +67,11 @@ public class SingleThread implements Runnable{
     String userId = swiperDetails.getSwiper();
     String target = swiperDetails.getSwipee();
     String leftOrRight = swiperDetails.getLeftOrRight();
+    AtomicBoolean contain = new AtomicBoolean(false);
 
     if (!hashmap2.containsKey(userId)) {
       hashmap2.put(userId, Collections.synchronizedList(new ArrayList<>()));
+      contain.set(true);
     }
 
     if (leftOrRight.equalsIgnoreCase("right")) {
@@ -75,14 +80,18 @@ public class SingleThread implements Runnable{
       }
     }
 
-    JsonObject jsonObject = new JsonObject();
-    jsonObject.add("matchList", JsonParser.parseString(hashmap2.get(userId).toString()));
 
     try (Jedis jedis = jedisPool.getResource()) {
-      jedis.sadd(userId, new GsonBuilder().setPrettyPrinting().create().toJson(jsonObject));
-//      jedis.sadd(userId, "consumer2");
+      jedis.select(1); // Select database 1
+      if(contain.get()) {
+        jedis.sadd(userId, hashmap2.get(userId).toString());
+      } else {
+        jedis.set(userId, hashmap2.get(userId).toString());
+      }
+      // Use the jedis object to interact with Redis
+    } catch (JedisException e) {
+      // Handle the exception
     }
-
   }
 
 }

@@ -11,7 +11,7 @@ import redis.clients.jedis.JedisPoolConfig;
 
 public class Consumer {
 
-  private static final int NUM_THREADS = 10;
+  private static final int NUM_THREADS = 200;
   private static final ConcurrentHashMap<String, LikeAndDislike> HASH_MAP1 = new ConcurrentHashMap<>();
   private static final String QUEUE = "ResultMQ1";
   private static final String EXCHANGE = "SwipeExchange";
@@ -19,20 +19,20 @@ public class Consumer {
 
   public static void main(String[] args) {
     ConnectionFactory connectionFactory = new ConnectionFactory();
-    connectionFactory.setHost("localhost");
-    connectionFactory.setUsername("guest");
-    connectionFactory.setPassword("guest");
+//    connectionFactory.setHost("localhost");
+//    connectionFactory.setUsername("guest");
+//    connectionFactory.setPassword("guest");
 
-//    connectionFactory.setHost("54.202.0.80");
-//    connectionFactory.setVirtualHost("cherry_broker");
-//    connectionFactory.setUsername("user");
-//    connectionFactory.setPassword("user");
+    connectionFactory.setHost("54.201.155.64");
+    connectionFactory.setVirtualHost("cherry_broker");
+    connectionFactory.setUsername("user");
+    connectionFactory.setPassword("user");
 
-    jedisPool = new JedisPool("localhost", 6379);
-    JedisPoolConfig config = new JedisPoolConfig();
-    config.setMaxTotal(100);
-    config.setBlockWhenExhausted(true);
-    jedisPool.setConfig(config);
+
+    JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
+    jedisPoolConfig.setMaxTotal(200);
+    jedisPoolConfig.setMaxIdle(150);
+    JedisPool jedisPool = new JedisPool(new JedisPoolConfig(), "34.219.132.175", 6379);
 
     try {
       Connection connection = connectionFactory.newConnection();
